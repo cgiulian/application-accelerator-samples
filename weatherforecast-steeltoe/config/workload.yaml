@@ -19,3 +19,9 @@ spec:
       url: https://github.com/cgiulian/application-accelerator-samples.git
       ref:
         branch: main
+  build:
+    env:
+    - name: DOTNET_CLI_TELEMETRY_OPTOUT
+      value: "true"
+    - name: BP_DOTNET_PUBLISH_FLAGS
+      value: "--no-restore"
