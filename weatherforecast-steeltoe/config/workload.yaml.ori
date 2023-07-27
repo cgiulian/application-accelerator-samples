@@ -20,3 +20,7 @@ spec:
       ref:
         branch: main
     subPath: weatherforecast-steeltoe
+  build:
+    env:
+    - name: DOTNET_CLI_TELEMETRY_OPTOUT
+      value: "true"
